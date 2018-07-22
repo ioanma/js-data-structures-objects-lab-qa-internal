@@ -8,3 +8,9 @@ function updateDriverWithKeyAndValue(driver, key, value) {
   newDriver[key] = value;
   return newDriver;
 }
+
+function updateDriverWithKeyAndValue(driver, key, value) {
+  var newDriver = {...driver};
+  newDriver[key] = value;
+  return newDriver;
+}
