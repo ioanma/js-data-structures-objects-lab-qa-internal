@@ -5,7 +5,6 @@ var driver = {
 
 function updateDriverWithKeyAndValue(driver, key, value) {
   var newDriver = {...driver};
-  newDriver.key = key;
-  newDriver.value = value;
+  newDriver[key] = value;
   return newDriver;
 }
